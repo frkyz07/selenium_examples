@@ -1,4 +1,4 @@
-package instroduction;
+package javabasic;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package instroduction;
+package seleniumbasic;
 
 import java.time.Duration;
 

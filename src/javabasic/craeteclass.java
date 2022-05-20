@@ -1,4 +1,4 @@
-package instroduction;
+package javabasic;
 
 public class craeteclass {
 

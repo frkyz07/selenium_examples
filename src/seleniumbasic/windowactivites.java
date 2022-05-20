@@ -1,4 +1,4 @@
-package instroduction;
+package seleniumbasic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
