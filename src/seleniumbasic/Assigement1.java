@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class assigement1 {
+public class Assigement1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,11 +1,11 @@
-package javabasic;
+package seleniumbasic;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class selintroduction {
+public class SeleniumIntroduction {
 
 
 	public static void main(String[] args) {

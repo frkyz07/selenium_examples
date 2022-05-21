@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 
 
-public class parentchild {
+public class ParentChild {
 
 
 

@@ -3,7 +3,7 @@ package seleniumbasic;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class windowactivites {
+public class WindowActivites {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\frkyz\\OneDrive\\Belgeler\\chromedriver_win32\\chromedriver.exe");

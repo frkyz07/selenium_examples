@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class assigment2 {
+public class DynamicDropDowns {
 
 	public static void main(String[] args) throws InterruptedException {
 
