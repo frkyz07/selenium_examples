@@ -1,46 +1,50 @@
 package seleniumbasic;
+
+import java.util.Iterator;
+
+import java.util.Set;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import org.testng.Assert;
-
-
-
 public class ParentChild {
 
-
-
-public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
 // TODO Auto-generated method stub
 
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\frkyz\\OneDrive\\Belgeler\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Downloads/chromedriver");
 
-	WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 
-driver.get("https://rahulshettyacademy.com/dropdownsPractise/#"); //URL in the browser
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");
 
-//  //a[@value='MAA']  - Xpath for chennai
+		driver.findElement(By.cssSelector(".blinkingText")).click();
 
-//  //a[@value='BLR']
+		Set<String> windows = driver.getWindowHandles(); // [parentid,childid,subchildId]
 
-driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+		Iterator<String> it = windows.iterator();
 
-driver.findElement(By.xpath("//a[@value='BLR']")).click();
+		String parentId = it.next();
 
-Thread.sleep(2000);
+		String childId = it.next();
 
-//driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+		driver.switchTo().window(childId);
 
-driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
 
-driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+		driver.findElement(By.cssSelector(".im-para.red")).getText();
 
-}
+		String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim()
+				.split(" ")[0];
 
+		driver.switchTo().window(parentId);
 
+		driver.findElement(By.id("username")).sendKeys(emailId);
+
+	}
 
 }
