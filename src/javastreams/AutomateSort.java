@@ -35,7 +35,7 @@ public class AutomateSort {
 		}
 		System.out.println(count);
 	}
-	//@Test
+	@Test
 	public void streamFilter()
 	{
 		ArrayList<String> names = new ArrayList<String>();
@@ -63,7 +63,7 @@ public class AutomateSort {
 		names.stream().filter(s->s.length()>4).limit(1).forEach(s->System.out.println(s));
 		}
 	
-	//@Test
+	@Test
 	public void streamMap() 
 	{
 		ArrayList<String> names = new ArrayList<String>();
